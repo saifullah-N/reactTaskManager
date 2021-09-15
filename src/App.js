@@ -33,7 +33,6 @@ setTasks(tasks.filter((task)=>(task.id!==id)))
   }
 
   return (
-<div>
     <div className="container">
       <Header onAdd={()=>{setShowAddTask(!showAddTask)}} showAdd={showAddTask} />
         {showAddTask && (<AddTask onAdd={addTask} /> )}
@@ -42,7 +41,7 @@ setTasks(tasks.filter((task)=>(task.id!==id)))
         <Footer></Footer>
 
     </div>
-</div>
+
   );
 }
 
